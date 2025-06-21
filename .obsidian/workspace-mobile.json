@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledgebase/Untitled.md",
+                "file": "knowledgebase/knowledgebase.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "knowledgebase"
             }
           }
         ]
@@ -108,7 +108,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "knowledgebase/Untitled.md",
+            "file": "knowledgebase/knowledgebase.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "knowledgebase/Untitled.md",
+            "file": "knowledgebase/knowledgebase.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -141,7 +141,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "knowledgebase/Untitled.md",
+            "file": "knowledgebase/knowledgebase.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -166,7 +166,7 @@
   "active": "79e9c3e6ab3c2de9",
   "lastOpenFiles": [
     "knowledge -sources.md",
-    "knowledgebase/Untitled.md",
+    "knowledgebase/knowledgebase.md",
     "knowledgebase",
     "templates/templates-paterns.md",
     "prompts/prompt-base.md",
