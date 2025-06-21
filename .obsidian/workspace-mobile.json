@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config is.md",
+                "file": "config ia.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "config is"
+              "title": "config ia"
             }
           }
         ]
@@ -166,7 +166,7 @@
   "active": "79e9c3e6ab3c2de9",
   "lastOpenFiles": [
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
-    "config is.md",
+    "config ia.md",
     "knowledgebase/knowledgebase.md",
     "knowledgebase/knowledge -sources.md",
     "knowledgebase/templates/templates-paterns.md",
