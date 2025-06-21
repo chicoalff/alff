@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prompts/base de conhecimento prompts.md",
+                "file": "prompts/ghggg.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "base de conhecimento prompts"
+              "title": "ghggg"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "prompts/base de conhecimento prompts.md",
+            "file": "prompts/ghggg.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "prompts/base de conhecimento prompts.md",
+            "file": "prompts/ghggg.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -131,7 +131,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "prompts/base de conhecimento prompts.md",
+            "file": "prompts/ghggg.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -154,5 +154,8 @@
     }
   },
   "active": "79e9c3e6ab3c2de9",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "prompts/base de conhecimento prompts.md",
+    "prompts/prompt-base.md"
+  ]
 }
