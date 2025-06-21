@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Untitled.md",
+                "file": "knowledge -sources.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "knowledge -sources"
             }
           }
         ]
@@ -98,7 +98,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "templates/Untitled.md",
+            "file": "knowledge -sources.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -117,7 +117,7 @@
         "state": {
           "type": "outgoing-link",
           "state": {
-            "file": "templates/Untitled.md",
+            "file": "knowledge -sources.md",
             "linksCollapsed": false,
             "unlinkedCollapsed": true
           },
@@ -131,7 +131,7 @@
         "state": {
           "type": "outline",
           "state": {
-            "file": "templates/Untitled.md",
+            "file": "knowledge -sources.md",
             "followCursor": false,
             "showSearch": false,
             "searchQuery": ""
@@ -155,8 +155,9 @@
   },
   "active": "79e9c3e6ab3c2de9",
   "lastOpenFiles": [
+    "templates/templates-paterns.md",
+    "knowledge -sources.md",
     "prompts/prompt-base.md",
-    "templates/Untitled.md",
     "prompts/ghggg.md",
     "prompts/base de conhecimento prompts.md"
   ]
