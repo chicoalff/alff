@@ -1,4 +1,5 @@
-file-name: tmpl-integracao-conhecimento-v1.md
+file-name: tmpl-integracao-conhecimento-v1.txt
+
 
 # Template: Integração de Conhecimento com Memória Persistente
 
