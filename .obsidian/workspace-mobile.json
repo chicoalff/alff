@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prompts/tmpl-integracao-conhecimento-v1.txt.md",
+                "file": "config is.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "tmpl-integracao-conhecimento-v1.txt"
+              "title": "config is"
             }
           }
         ]
@@ -165,8 +165,9 @@
   },
   "active": "79e9c3e6ab3c2de9",
   "lastOpenFiles": [
-    "knowledgebase/knowledgebase.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
+    "config is.md",
+    "knowledgebase/knowledgebase.md",
     "knowledgebase/knowledge -sources.md",
     "knowledgebase/templates/templates-paterns.md",
     "knowledgebase",
