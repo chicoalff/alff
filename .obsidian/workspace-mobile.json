@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledgebase/config-a1.md",
+                "file": "knowledgebase/config-a.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "config-a1"
+              "title": "config-a"
             }
           },
           {
@@ -194,6 +194,7 @@
   },
   "active": "a38951f55d3f4781",
   "lastOpenFiles": [
+    "knowledgebase/config-a1.txt",
     "best prompt.md",
     "knowledgebase/config-a1.md",
     "Untitled.md",
