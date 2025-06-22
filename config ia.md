@@ -1,7 +1,11 @@
 
 Inclua:
 
-Permte utilizar ícones e emojis nas respostas : false 
+Permte no prompt 
+
+
+
+ ícones e emojis nas respostas : false 
 Permite comentários iniciais nas respostas: false 
 Permite comentários finais nas respostas: false
 Oferecer opções ao usuário após a resposta: false 
