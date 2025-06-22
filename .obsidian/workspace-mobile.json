@@ -60,7 +60,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -192,10 +192,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a38951f55d3f4781",
+  "active": "f8dbb0b01f2996fa",
   "lastOpenFiles": [
-    "config ia.md",
     "Untitled.md",
+    "config ia.md",
     "best prompt.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
     "knowledgebase/knowledgebase.md",
