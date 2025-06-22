@@ -6,9 +6,14 @@
 
 [Modelo_IA]
 # Define o modelo base de inteligência artificial utilizado
-modelo_ia = GPT-4 
-# QUANDO USAR: Sempre necessário para especificar qual engine de IA será usado
-# PROPÓSITO: Define capacidades cognitivas e linguísticas do assistente
+# OPÇÕES DISPONÍVEIS: ChatGPT, Gemini, Claude, DeepSeek, Perplexity, Grok
+modelo_ia = Claude
+# QUANDO USAR ChatGPT: Para tarefas gerais, programação, análise de texto
+# QUANDO USAR Gemini: Para integração com Google, multimodalidade avançada
+# QUANDO USAR Claude: Para análise de documentos, raciocínio complexo, segurança
+# QUANDO USAR DeepSeek: Para programação avançada, análise de código
+# QUANDO USAR Perplexity: Para pesquisa e síntese de informações atualizadas
+# QUANDO USAR Grok: Para respostas diretas, humor, análise de tendências
 
 nome_agente = productnauta 
 # QUANDO USAR: Para criar identidade personalizada do assistente
