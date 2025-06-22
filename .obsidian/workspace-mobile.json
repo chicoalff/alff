@@ -59,8 +59,7 @@
               "title": "Untitled"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -192,12 +191,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a38951f55d3f4781",
+  "active": "63400414dc49f95e",
   "lastOpenFiles": [
+    "Untitled.md",
     "knowledgebase/config-a1.txt",
     "best prompt.md",
     "knowledgebase/config-a1.md",
-    "Untitled.md",
     "knowledgebase/config-a.md",
     "knowledgebase/config-a 1.md",
     "prompts/Untitled 1.md",
