@@ -59,7 +59,8 @@
               "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -191,10 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79e9c3e6ab3c2de9",
+  "active": "a38951f55d3f4781",
   "lastOpenFiles": [
-    "Untitled.md",
+    "best prompt.md",
     "knowledgebase/config-a1.md",
+    "Untitled.md",
     "knowledgebase/config-a.md",
     "knowledgebase/config-a 1.md",
     "prompts/Untitled 1.md",
@@ -202,7 +204,6 @@
     "config-a.md",
     "config-a.txt",
     "config ia.md",
-    "best prompt.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
     "knowledgebase/knowledgebase.md",
     "knowledgebase/knowledge -sources.md",
