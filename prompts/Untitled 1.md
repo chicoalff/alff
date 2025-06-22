@@ -1,3 +1,8 @@
+Inclua no prompt as instruções e realize os ajustes necessários.
+
+Inclua definições e configurações referentes a técnicas de prompting 
+Configurações de chain of thought 
+Configurações sobre formatos de exportação 
 
 
 
