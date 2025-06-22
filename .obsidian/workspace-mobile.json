@@ -13,7 +13,7 @@
             "state": {
               "type": "json",
               "state": {
-                "file": "config.json"
+                "file": "knowledgebase/knowledge/config.json"
               },
               "icon": "lucide-file",
               "title": "config"
@@ -33,8 +33,7 @@
               "title": "Untitled 1"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -50,7 +49,7 @@
           "type": "file-explorer",
           "state": {
             "sortOrder": "alphabetical",
-            "autoReveal": false
+            "autoReveal": true
           },
           "icon": "lucide-folder-closed",
           "title": "Files"
@@ -183,11 +182,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "1e406d7e4bb1258f",
+  "active": "63400414dc49f95e",
   "lastOpenFiles": [
-    "knowledgebase/templates/prompting.json",
-    "config.json",
     "Untitled 1.md",
+    "knowledgebase/knowledgebase.md",
+    "knowledgebase/config-a1.txt",
+    "knowledgebase/knowledge/prompting.json",
+    "knowledgebase/knowledge/config.json",
     "knowledgebase/templates/content-writing.json",
     "knowledgebase/templates/config-templates.json",
     "knowledgebase/papers/General Tips for Designing Prompts _ Prompt Engineering Guide.pdf",
@@ -195,11 +196,9 @@
     "knowledgebase/papers/Prompt Chaining _ Prompt Engineering Guide.pdf",
     "knowledgebase/papers/Automatic Prompt Engineer (APE) _ Prompt Engineering Guide.pdf",
     "knowledgebase/papers",
-    "knowledgebase/kairós",
     "Untitled.md",
     "best prompt.md",
     "knowledgebase/config-a.md",
-    "config.yaml",
     "knowledgebase/config-a1.md",
     "knowledgebase/config-a 1.md",
     "prompts/Untitled 1.md",
@@ -207,7 +206,6 @@
     "config-a.md",
     "config ia.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
-    "knowledgebase/knowledgebase.md",
     "knowledgebase/knowledge -sources.md",
     "knowledgebase/templates/templates-paterns.md",
     "prompts/prompt-base.md",
