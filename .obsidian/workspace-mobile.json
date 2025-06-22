@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "prompts/Untitled 1.md",
+                "file": "knowledgebase/about-chicoalff.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Untitled 1"
+              "title": "about-chicoalff"
             }
           },
           {
@@ -193,8 +193,8 @@
   },
   "active": "79e9c3e6ab3c2de9",
   "lastOpenFiles": [
-    "config ia.md",
     "prompts/Untitled 1.md",
+    "config ia.md",
     "best prompt.md",
     "Untitled.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
