@@ -11,13 +11,30 @@
             "id": "1da9f25f15100b56",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "json",
+              "state": {
+                "file": "config.json"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "config"
+            }
+          },
+          {
+            "id": "1e406d7e4bb1258f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled 1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled 1"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,30 +179,37 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": false,
+      "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "63400414dc49f95e",
+  "active": "1e406d7e4bb1258f",
   "lastOpenFiles": [
+    "knowledgebase/templates/prompting.json",
+    "config.json",
+    "Untitled 1.md",
+    "knowledgebase/templates/content-writing.json",
+    "knowledgebase/templates/config-templates.json",
+    "knowledgebase/papers/General Tips for Designing Prompts _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers/Prompting Techniques _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers/Prompt Chaining _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers/Automatic Prompt Engineer (APE) _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers",
+    "knowledgebase/kairós",
     "Untitled.md",
     "best prompt.md",
     "knowledgebase/config-a.md",
     "config.yaml",
-    "config. json",
-    "config.json",
-    "knowledgebase/config-a1.txt",
     "knowledgebase/config-a1.md",
     "knowledgebase/config-a 1.md",
     "prompts/Untitled 1.md",
     "knowledgebase/about-chicoalff.md",
     "config-a.md",
-    "config-a.txt",
     "config ia.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
     "knowledgebase/knowledgebase.md",
     "knowledgebase/knowledge -sources.md",
     "knowledgebase/templates/templates-paterns.md",
-    "knowledgebase",
     "prompts/prompt-base.md",
     "prompts/ghggg.md",
     "prompts/base de conhecimento prompts.md"
