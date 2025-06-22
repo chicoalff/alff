@@ -22,9 +22,21 @@ PROMPT_BLOCOS    = "https://github.com/chicoalff/alff/raw/master/workflows%2Fart
 PROMPT_REVISAO   = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F7.md"
 PROMPT_CHECKLIST = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F8.md"
 
-# --- URL do agent.md e do config.json (itumb repo) ---
-AGENT_INFO_URL    = "https://github.com/chicoalff/itumb/raw/master/agent.md"
-ARTIGO_CONFIG_URL = "https://github.com/chicoalff/itumb/raw/master/article_config.json"
+# --- URL do agent.md e do config.json (repositorio correto) ---
+AGENT_INFO_URL    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2Fagent.md"
+ARTIGO_CONFIG_URL = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2Farticle_config.json"
+
+O restante do script permanece igual.
+Exemplo da seção ajustada:
+
+# --- URL do agent.md e do config.json (repositorio correto) ---
+AGENT_INFO_URL    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2Fagent.md"
+ARTIGO_CONFIG_URL = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2Farticle_config.json"
+
+Utilize sempre o endpoint /raw/ para leitura de arquivos do Github no formato HTTP.
+Ok.
+
+
 
 # --- Utilitários ---
 def carregar_url(url: str) -> str:
