@@ -1,3 +1,4 @@
+Com base na análise de todo o conteúdo fornecido, foi criado um novo arquivo JSON unificado e estruturado. Este arquivo serve como uma base de conhecimento detalhada e abrangente sobre Engenharia de Prompts, otimizada para ser utilizada por IAs como Gemini, Claude, DeepSeek e Perplexity. A estrutura consolida as informações, elimina redundâncias e organiza os dados de forma lógica e hierárquizada para máxima clareza e aproveitamento.
 {
   "baseDeConhecimento": {
     "titulo": "Guia Completo e Estruturado de Engenharia de Prompts",
