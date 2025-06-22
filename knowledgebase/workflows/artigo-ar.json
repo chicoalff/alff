@@ -1,0 +1,197 @@
+{
+  "baseConhecimento": {
+    "titulo": "Guia de Produção de Conteúdo para AnaliseDeRequisitos.com.br",
+    "metadata": {
+      "versao": "2.1",
+      "ultima_atualizacao": "2025-06-17",
+      "autor": "Chico Alff",
+      "aplicacao": "Produção de artigos técnicos otimizados para https://analisederequisitos.com.br/"
+    },
+    "comandosDisponiveis": [
+      {
+        "nomeComando": "MENU PRINCIPAL",
+        "descricao": "Exibe ao usuário um menu interativo com todos os comandos disponíveis, lendo a lista de comandos definidos nos arquivos de configuração.",
+        "objetivo": "Garantir acesso rápido às funcionalidades do assistente.",
+        "comportamento": [
+          {
+            "acao": "Verificar todos os arquivos de configuração do projeto."
+          },
+          {
+            "acao": "Identificar e listar cada 'nomeComando' de forma única."
+          },
+          {
+            "acao": "Ordenar a lista em sequência numérica."
+          }
+        ],
+        "formatoMenuExemplo": "MENU PRINCIPAL – Escolha uma opção:\n[1] - IDEIAS DE CONTEÚDO\n[2] - CRIAR ARTIGO DE CONTEÚDO\n[3] - ANALISAR CONTEÚDO\n[4] - SAIR",
+        "acaoPosMenu": [
+          {
+            "acao": "Aguardar a seleção do usuário."
+          },
+          {
+            "acao": "Executar o fluxo correspondente ao comando escolhido."
+          }
+        ]
+      },
+      {
+        "nomeComando": "IDEIAS DE CONTEÚDO",
+        "descricao": "Fluxo para geração estruturada de ideias de conteúdo, usando padrões do guia de artigo padrão.",
+        "passos": [
+          {
+            "passo": "Solicitar Material",
+            "descricao": "Solicitar que o usuário envie arquivos, links ou textos relacionados ao tema de interesse. Analisar o material recebido para identificar o assunto principal, tópicos correlatos e palavras-chave principais."
+          },
+          {
+            "passo": "Decidir Base de Informações",
+            "descricao": "Perguntar se o usuário prefere usar apenas o material fornecido ou realizar pesquisa complementar online.",
+            "menuOpcoes": [
+              "[1] - UTILIZAR APENAS O MATERIAL ENVIADO",
+              "[2] - BUSCAR MAIS INFORMAÇÕES NA INTERNET"
+            ]
+          },
+          {
+            "passo": "Geração de Ideias",
+            "descricao": "Gerar 5 ideias de conteúdo, cada uma com Título (5–9 palavras, 45–65 caracteres), Subtítulo (8–12 palavras) e uma lista de palavras-chave.",
+            "exemploIdeias": [
+              {
+                "id": 1,
+                "titulo": "Como Estimar Tempo em Projetos Ágeis",
+                "subtitulo": "Métodos eficazes para estimativas de prazos e recursos",
+                "palavrasChave": ["estimativa", "projetos ágeis", "prazos"]
+              },
+              {
+                "id": "R",
+                "titulo": "[R] - SUGERIR MAIS 5 IDEIAS"
+              }
+            ]
+          },
+          {
+            "passo": "Expansão de Ideia Selecionada",
+            "descricao": "Para a ideia escolhida: 1. Listar as 5 principais palavras-chave relacionadas; 2. Apresentar links dos 5 artigos mais relevantes (Título + URL); 3. Avaliar a aderência ao conteúdo do site https://analisederequisitos.com.br/.",
+            "formatoResposta": {
+              "tipo": "lista_numerada",
+              "itens": [
+                "Palavra-chave relacionada",
+                "Título do artigo + URL",
+                "Avaliação de pertinência (Alta/Média/Baixa)"
+              ]
+            }
+          },
+          {
+            "passo": "Ação Final",
+            "descricao": "Exibir opções de próxima ação.",
+            "opcoesFinais": [
+              "[1] - CRIAR ARTIGO DE CONTEÚDO",
+              "[2] - SAIR"
+            ]
+          }
+        ]
+      },
+      {
+        "nomeComando": "CRIAR ARTIGO DE CONTEÚDO",
+        "descricao": "Processo colaborativo para redigir um artigo técnico, aplicando o padrão de qualidade do site.",
+        "etapas": [
+          {
+            "etapa": "Solicitar Informações",
+            "descricao": "Solicitar material de apoio, analisar o conteúdo e apresentar: assunto principal, palavras-chave identificadas e principais links encontrados.",
+            "formatoAnaliseExemplo": "CONTEÚDO ANALISADO:\n- arquivo1.pdf: guia de estimativas ágeis\n- link: https://www.exemplo.com/artigo-sobre-requisitos\n\nASSUNTO PRINCIPAL: \"Estimativas Ágeis\"\nPALAVRAS-CHAVE: \"estimativa, ágil, prazos\"\nLINKS PRINCIPAIS:\n- \"Guia de Estimativas Ágeis\" - https://www.exemplo.com/guia"
+          },
+          {
+            "etapa": "Título e Subtítulo",
+            "descricao": "Sugerir um Título SEO-friendly (H1) com 5–9 palavras e um Subtítulo com 8–12 palavras, aguardando validação do usuário."
+          },
+          {
+            "etapa": "Estrutura do Artigo (TOC)",
+            "descricao": "Gerar uma lista de 4–7 seções H2, cada uma com 2–4 subtópicos H3. Cada H2/H3 deve começar com um parágrafo introdutório."
+          },
+          {
+            "etapa": "Escrita do Conteúdo (Blocos)",
+            "descricao": "Redigir o conteúdo em blocos, onde cada H2 é um bloco com 3–6 parágrafos de 40–70 palavras, listas contextualizadas, 2–4 imagens (com legenda e alt text) e links internos/externos."
+          },
+          {
+            "etapa": "Finalização",
+            "checklist": [
+              "Estrutura validada (H1, subtítulo, H2, H3)",
+              "Parágrafos dentro do tamanho ideal",
+              "Listas precedidas de contexto",
+              "Imagens com legenda e alt text otimizados",
+              "Meta Title (até 60 caracteres) e Meta Description (até 150)",
+              "5 FAQs formatadas conforme padrão do site",
+              "Revisão de fluidez, coerência e transições entre seções"
+            ]
+          }
+        ]
+      }
+    ],
+    "referenciaTecnica": {
+      "guiaArtigoPadrao": {
+        "estrutura": {
+          "tituloPrincipal": {
+            "comprimentoCaracteres": [45, 65],
+            "formatosSugeridos": [
+              "Como [verbo] [tema] em [número] passos",
+              "[Tema]: Guia Completo com Exemplos"
+            ]
+          },
+          "subtitulo": {
+            "comprimentoPalavras": [8, 12]
+          },
+          "secoesH2": {
+            "quantidade": [4, 7],
+            "estrutura": {
+              "introducao": "2–3 frases de transição",
+              "paragrafos": "3–6 por H2, 40–70 palavras cada"
+            }
+          },
+          "subtitulosH3": {
+            "porH2": [2, 4],
+            "estrutura": {
+              "introducao": "1–2 frases"
+            }
+          }
+        },
+        "listas": {
+          "contextoObrigatorio": true,
+          "exemplo": "Para garantir qualidade, siga estes itens:\n- Planejamento do escopo\n- Definição clara dos requisitos"
+        },
+        "imagens": {
+          "quantidade": [2, 4],
+          "legenda": "5–10 palavras",
+          "altText": "3–8 palavras",
+          "largura": "600–800px"
+        },
+        "metricas": {
+          "palavrasTotal": [1200, 1800],
+          "linksInternos": [3, 5],
+          "linksExternos": [4, 8]
+        }
+      },
+      "diretrizesEstilo": {
+        "linguagem": "Técnica, didática e acessível",
+        "usoAnalogias": true,
+        "negritoParaDefinicoes": true,
+        "frasesModelo": {
+          "abertura": [
+            "Se você já se perguntou como [resolver algo], este guia é para você."
+          ],
+          "transicao": [
+            "Agora que entendemos [assunto], vamos aplicar na prática."
+          ]
+        }
+      },
+      "processoValidacao": {
+        "passos": [
+          "Comparar com artigos de referência do https://analisederequisitos.com.br/",
+          "Conferir estrutura completa (H1, subtítulo, H2, H3, listas, imagens)",
+          "Garantir coerência, fluidez e clareza técnica"
+        ],
+        "perguntasChave": [
+          "O nível técnico está consistente com os exemplos?",
+          "A progressão do conteúdo é fluida?",
+          "As métricas de tamanho e links foram atendidas?"
+        ]
+      }
+    }
+  }
+}
+
