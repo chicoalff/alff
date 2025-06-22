@@ -108,7 +108,7 @@
         "state": {
           "type": "backlink",
           "state": {
-            "file": "knowledgebase/knowledgebase.md",
+            "file": "config ia.md",
             "collapseAll": false,
             "extraContext": false,
             "sortOrder": "alphabetical",
@@ -163,7 +163,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "63400414dc49f95e",
+  "active": "79e9c3e6ab3c2de9",
   "lastOpenFiles": [
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
     "config ia.md",
