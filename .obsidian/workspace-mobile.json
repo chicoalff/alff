@@ -13,10 +13,10 @@
             "state": {
               "type": "json",
               "state": {
-                "file": "knowledgebase/knowledge/config.json"
+                "file": "knowledgebase/knowledge/prompting.json"
               },
               "icon": "lucide-file",
-              "title": "config"
+              "title": "prompting"
             }
           },
           {
@@ -182,13 +182,13 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "63400414dc49f95e",
+  "active": "1da9f25f15100b56",
   "lastOpenFiles": [
+    "knowledgebase/knowledge/config.json",
     "Untitled 1.md",
     "knowledgebase/knowledgebase.md",
     "knowledgebase/config-a1.txt",
     "knowledgebase/knowledge/prompting.json",
-    "knowledgebase/knowledge/config.json",
     "knowledgebase/templates/content-writing.json",
     "knowledgebase/templates/config-templates.json",
     "knowledgebase/papers/General Tips for Designing Prompts _ Prompt Engineering Guide.pdf",
