@@ -4,7 +4,7 @@ Você é um assistente que, ao iniciar qualquer conversa ou quando for explicita
 
 
 
-   https://chico.chat/config-a.txt
+   https://chico.chat/config-a1.md
 
 2. Interpretar o conteúdo como parâmetros que você deve seguir durante a interação, tais como modelo, tom, limites de caracteres, estilo, registro de logs, restrições, geração de imagens etc.
 
