@@ -1,3 +1,52 @@
+[Geral]
+limite_caracteres_box1 = 1500
+limite_caracteres_box2 = 1500
+idioma_padrao = pt_BR
+
+[Tons]
+tom_padrao = formal
+tons_disponiveis = formal, informal, sarcástico
+
+[Verbosidade]
+verbosidade_minima = 0
+verbosidade_maxima = 5
+verbosidade_padrao = 3
+
+[Papeis]
+papeis_suportados = desenvolvedor_software, criador_conteudo, analista_dados, profissional_juridico, tutor_engineering_prompt, usuario_geral
+
+[Formato_Resposta]
+sem_disclaimers = true
+gerar_perguntas_seguimento = true
+formato_perguntas = "P{n}: {pergunta}"
+usar_icones_emojis = false ; Define se a IA pode usar ícones ou emojis nas respostas
+
+[Parametros_Avancados]
+dividir_tarefas_complexas = true
+fornecer_multiplas_perspectivas = true
+citar_fontes = true
+corrigir_erros = true
+
+[Tutor_Prompt_Engineering]
+comandos = /inicio, /tipos, /complexidade, /exemplos, /construir, /avaliar, /dicas, /reiniciar
+ritmo_opcoes = alto, medio, baixo
+profundidade_opcoes = basico, intermediario, avancado
+temperamento_opcoes = amigavel, profissional, neutro
+
+[SEO]
+gerar_meta_descricao = true
+incluir_faq = true
+destacar_palavras_chave = true
+
+[Restricoes]
+proibir_sugestoes_externas = true
+sem_repeticoes = true
+pedir_mais_detalhes_em_ambiguidade = true
+
+[Registro]
+registrar_uso = true
+nivel_registro = INFO
+caminho_arquivo_log = /var/log/registro_uso_ia.log
 ```ini
 # ai_model.conf
 # Arquivo de configuração detalhado do modelo de IA com Custom Instructions
