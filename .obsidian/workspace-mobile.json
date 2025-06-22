@@ -8,30 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "79e9c3e6ab3c2de9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "knowledgebase/config-a.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "config-a"
-            }
-          },
-          {
             "id": "f8dbb0b01f2996fa",
             "type": "leaf",
             "state": {
@@ -191,14 +167,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79e9c3e6ab3c2de9",
+  "active": "f8dbb0b01f2996fa",
   "lastOpenFiles": [
+    "knowledgebase/config-a.md",
+    "config.yaml",
+    "config. json",
     "config.json",
     "Untitled.md",
     "knowledgebase/config-a1.txt",
     "best prompt.md",
     "knowledgebase/config-a1.md",
-    "knowledgebase/config-a.md",
     "knowledgebase/config-a 1.md",
     "prompts/Untitled 1.md",
     "knowledgebase/about-chicoalff.md",
