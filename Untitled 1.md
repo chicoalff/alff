@@ -213,3 +213,338 @@
   "conclusao": "Engenharia de prompts é habilidade essencial para maximizar LLMs. Com técnicas e práticas aqui descritas, é possível extrair melhor performance e segurança, estendendo-se a novas pesquisas e aplicações."
 }
 
+{
+  "tituloGuia": "Guia Completo de Engenharia de Prompts",
+  "secoes": [
+    {
+      "titulo": "Introdução à Engenharia de Prompts",
+      "descricao": "A engenharia de prompts é uma disciplina relativamente nova que visa desenvolver e otimizar prompts e utilizar eficientemente modelos de linguagem (LMs) para uma ampla variedade de aplicativos e tópicos de pesquisa. Esta disciplina vai muito além de simplesmente projetar e desenvolver prompts - ela abrange uma ampla gama de habilidades e técnicas úteis para interagir e desenvolver com LLMs.",
+      "subsecoes": [
+        {
+          "titulo": "O que é Engenharia de Prompts?",
+          "descricao": "Os pesquisadores usam a engenharia de prompt para melhorar a capacidade dos LLMs em uma ampla gama de tarefas comuns e complexas, como resposta a perguntas e raciocínio aritmético. Os desenvolvedores usam engenharia de prompt para projetar técnicas de prompt robustas e eficazes que fazem interface com LLMs e outras ferramentas.",
+          "beneficios": [
+            "Melhorar a segurança dos LLMs",
+            "Criar novos recursos",
+            "Aumentar os LLMs com conhecimento de domínio",
+            "Integrar ferramentas externas"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Elementos Fundamentais de um Prompt",
+      "descricao": "Um prompt pode conter informações como a instrução ou pergunta que você está passando para o modelo e incluir outros detalhes como contexto, entradas ou exemplos. Os elementos principais incluem:",
+      "elementos": [
+        {
+          "nome": "Instrução",
+          "descricao": "A tarefa específica que você deseja que o modelo execute."
+        },
+        {
+          "nome": "Contexto",
+          "descricao": "Informações externas ou contexto adicional que pode orientar o modelo para melhores respostas."
+        },
+        {
+          "nome": "Dados de Entrada",
+          "descricao": "Os dados ou perguntas específicas para as quais você busca uma resposta."
+        },
+        {
+          "nome": "Indicador de Saída",
+          "descricao": "O tipo ou formato da saída desejada."
+        }
+      ]
+    },
+    {
+      "titulo": "Técnicas Principais de Prompting",
+      "tecnicas": [
+        {
+          "nome": "Zero-Shot Prompting",
+          "descricao": "Zero-shot prompting significa que o prompt usado para interagir com o modelo não conterá exemplos ou demonstrações. O prompt zero-shot instrui diretamente o modelo a executar uma tarefa sem qualquer exemplo adicional para orientá-lo.",
+          "caracteristicas": [
+            "Não requer exemplos prévios",
+            "Eficaz para modelos grandes bem treinados",
+            "Adequado para tarefas diretas e bem definidas"
+          ],
+          "exemplo": "Classifique o texto a seguir como positivo ou negativo:\n\"Adorei este produto, superou minhas expectativas!\""
+        },
+        {
+          "nome": "Few-Shot Prompting",
+          "descricao": "Parece que o prompting few-shot não é suficiente para obter respostas confiáveis para este tipo de problema de raciocínio. Esta técnica envolve fornecer alguns exemplos no prompt para orientar o modelo.",
+          "caracteristicas": [
+            "Fornece exemplos demonstrativos",
+            "Melhora a consistência das respostas",
+            "Útil para tarefas que requerem formatação específica"
+          ],
+          "estrutura": "Exemplos:\nEntrada: [exemplo 1] → Saída: [resultado 1]\nEntrada: [exemplo 2] → Saída: [resultado 2]\n\nAgora processe:\nEntrada: [sua entrada]"
+        },
+        {
+          "nome": "Chain-of-Thought (CoT) Prompting",
+          "descricao": "Chain-of-thought prompting tem sido popularizado para abordar tarefas mais complexas de raciocínio aritmético, de senso comum e simbólico.",
+          "caracteristicas": [
+            "Demonstra o processo de raciocínio passo a passo",
+            "Melhora significativamente tarefas de raciocínio complexo",
+            "É uma habilidade emergente que surge com modelos de linguagem suficientemente grandes"
+          ],
+          "exemplo": "Pergunta: Os números ímpares neste grupo somam um número par: 4, 8, 9, 15, 12, 2, 1.\nResposta: Somando todos os números ímpares (9, 15, 1) obtemos 25. A resposta é Falso."
+        },
+        {
+          "nome": "Self-Consistency",
+          "descricao": "Self-consistency visa \"substituir a decodificação gananciosa ingênua usada no prompting chain-of-thought\". A ideia é amostrar múltiplos caminhos de raciocínio diversos através de CoT few-shot e usar as gerações para selecionar a resposta mais consistente.",
+          "beneficios": [
+            "Aumenta a performance do CoT prompting",
+            "Melhora tarefas de raciocínio aritmético e de senso comum",
+            "Reduz erros através de múltiplas verificações"
+          ]
+        },
+        {
+          "nome": "Tree of Thoughts (ToT)",
+          "descricao": "Para tarefas complexas que requerem exploração ou planejamento estratégico antecipado, técnicas de prompting tradicionais ou simples são insuficientes. Tree of Thoughts (ToT) é uma estrutura que generaliza sobre chain-of-thought prompting e encoraja exploração sobre pensamentos que servem como passos intermediários para resolução geral de problemas.",
+          "caracteristicas": [
+            "ToT mantém uma árvore de pensamentos, onde pensamentos representam sequências de linguagem coerentes que servem como passos intermediários para resolver um problema",
+            "Permite exploração estratégica",
+            "Adequado para problemas complexos com múltiplas soluções possíveis"
+          ]
+        },
+        {
+          "nome": "ReAct Prompting",
+          "descricao": "ReAct pode recuperar informações para apoiar o raciocínio, enquanto o raciocínio ajuda a definir o que recuperar em seguida.",
+          "estrutura": [
+            {
+              "passo": "Thought (Pensamento)",
+              "descricao": "Raciocínio sobre a tarefa"
+            },
+            {
+              "passo": "Act (Ação)",
+              "descricao": "Ação específica a ser tomada"
+            },
+            {
+              "passo": "Obs (Observação)",
+              "descricao": "Feedback do ambiente"
+            }
+          ]
+        },
+        {
+          "nome": "Meta Prompting",
+          "descricao": "Meta Prompting é uma técnica avançada de prompting que foca nos aspectos estruturais e sintáticos de tarefas e problemas em vez de seus detalhes de conteúdo específicos.",
+          "vantagens": [
+            "Eficiência de tokens: Reduz o número de tokens necessários focando na estrutura em vez de conteúdo detalhado",
+            "Comparação justa: Fornece uma abordagem mais justa para comparar diferentes modelos de resolução de problemas",
+            "Eficácia zero-shot: Pode ser vista como uma forma de prompting zero-shot"
+          ]
+        },
+        {
+          "nome": "Prompt Chaining",
+          "descricao": "Para melhorar a confiabilidade e performance dos LLMs, uma das técnicas importantes de engenharia de prompt é quebrar tarefas em suas subtarefas. Uma vez que essas subtarefas tenham sido identificadas, o LLM é solicitado com uma subtarefa e então sua resposta é usada como entrada para outro prompt.",
+          "aplicacoes": [
+            "Tarefas complexas que requerem múltiplas etapas",
+            "Processamento sequencial de informações",
+            "Melhoria na precisão através de especialização"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Melhores Práticas para Design de Prompts",
+      "praticas": [
+        {
+          "nome": "Seja Específico e Claro",
+          "itens": [
+            "Use linguagem precisa e não ambígua",
+            "Defina claramente o que você espera como saída",
+            "Evite instruções vagas ou abertas demais"
+          ]
+        },
+        {
+          "nome": "Forneça Contexto Adequado",
+          "itens": [
+            "Inclua informações de fundo relevantes",
+            "Estabeleça o tom e estilo desejados",
+            "Defina restrições ou limitações importantes"
+          ]
+        },
+        {
+          "nome": "Use Formatação Estruturada",
+          "itens": [
+            "Organize informações de forma lógica",
+            "Use marcadores, numeração ou seções quando apropriado",
+            "Separe claramente instruções de exemplos"
+          ]
+        },
+        {
+          "nome": "Decomponha Tarefas Complexas",
+          "itens": [
+            "Divida problemas grandes em etapas menores",
+            "Use prompt chaining para tarefas multi-etapas",
+            "Considere usar CoT para raciocínio complexo"
+          ]
+        },
+        {
+          "nome": "Itere e Refine",
+          "itens": [
+            "Teste diferentes versões do prompt",
+            "Analise os resultados e ajuste conforme necessário",
+            "Considere usar self-consistency para verificação"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Técnicas Avançadas",
+      "subsecoes": [
+        {
+          "titulo": "Otimização de Prompts",
+          "descricao": "Design eficaz de prompt é crucial para aproveitar o potencial completo dos LLMs. Aderindo às melhores práticas como especificidade, formatação estruturada, decomposição de tarefas e aproveitando técnicas avançadas como few-shot, chain-of-thought e ReAct prompting, desenvolvedores podem melhorar significativamente a qualidade, precisão e complexidade das saídas geradas por esses LLMs poderosos."
+        },
+        {
+          "titulo": "Considerações de Segurança",
+          "itens": [
+            "Evite prompts que possam levar a conteúdo prejudicial",
+            "Teste para vieses e comportamentos indesejados",
+            "Implemente verificações de segurança quando necessário"
+          ]
+        },
+        {
+          "titulo": "Eficiência e Performance",
+          "itens": [
+            "Minimize tokens desnecessários",
+            "Use caching para prompts reutilizáveis",
+            "Considere a latência e custos de processamento"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Casos de Uso Comuns",
+      "casos": [
+        {
+          "area": "Análise de Texto",
+          "exemplos": [
+            "Classificação de sentimentos",
+            "Extração de entidades",
+            "Resumo de documentos"
+          ]
+        },
+        {
+          "area": "Geração de Conteúdo",
+          "exemplos": [
+            "Escrita criativa",
+            "Geração de código",
+            "Criação de documentação"
+          ]
+        },
+        {
+          "area": "Raciocínio e Análise",
+          "exemplos": [
+            "Resolução de problemas matemáticos",
+            "Análise lógica",
+            "Tomada de decisões"
+          ]
+        },
+        {
+          "area": "Tradução e Linguística",
+          "exemplos": [
+            "Tradução entre idiomas",
+            "Correção gramatical",
+            "Análise linguística"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Limitações e Desafios",
+      "topicos": [
+        {
+          "titulo": "Limitações dos LLMs",
+          "itens": [
+            "Conhecimento limitado por data de treinamento",
+            "Possibilidade de alucinações",
+            "Vieses nos dados de treinamento"
+          ]
+        },
+        {
+          "titulo": "Desafios na Engenharia de Prompts",
+          "itens": [
+            "Sensibilidade a pequenas mudanças",
+            "Necessidade de expertise específica do domínio",
+            "Dificuldade em generalização"
+          ]
+        },
+        {
+          "titulo": "Considerações Éticas",
+          "itens": [
+            "Responsabilidade no uso da tecnologia",
+            "Transparência nos processos",
+            "Impacto social das aplicações"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Tendências Futuras",
+      "topicos": [
+        {
+          "titulo": "Automação da Engenharia de Prompts",
+          "itens": [
+            "Ferramentas automatizadas para otimização",
+            "Aprendizado de máquina para design de prompts",
+            "Sistemas adaptativos"
+          ]
+        },
+        {
+          "titulo": "Integração com Outras Tecnologias",
+          "itens": [
+            "Combinação com sistemas de recuperação",
+            "Integração com bases de conhecimento",
+            "Interfaces multimodais"
+          ]
+        },
+        {
+          "titulo": "Especialização por Domínio",
+          "itens": [
+            "Prompts específicos para áreas técnicas",
+            "Customização para indústrias específicas",
+            "Adaptação cultural e linguística"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Recursos e Ferramentas",
+      "topicos": [
+        {
+          "titulo": "Plataformas de Teste",
+          "itens": [
+            "OpenAI Playground",
+            "Anthropic Console",
+            "Hugging Face Spaces"
+          ]
+        },
+        {
+          "titulo": "Bibliotecas e Frameworks",
+          "itens": [
+            "LangChain",
+            "Guidance",
+            "OpenAI API"
+          ]
+        },
+        {
+          "titulo": "Comunidades e Recursos",
+          "itens": [
+            "Prompt Engineering Guide",
+            "Papers e pesquisas acadêmicas",
+            "Fóruns e discussões da comunidade"
+          ]
+        }
+      ]
+    },
+    {
+      "titulo": "Conclusão",
+      "paragrafos": [
+        "A engenharia de prompts é uma habilidade fundamental para trabalhar efetivamente com modelos de linguagem grandes. É uma habilidade importante para interagir, construir e entender os recursos dos LLMs. Com as técnicas e práticas apresentadas neste guia, é possível aproveitar ao máximo o potencial dos LLMs para uma ampla variedade de aplicações.",
+        "O campo continua evoluindo rapidamente, com novas técnicas e abordagens sendo desenvolvidas regularmente. Manter-se atualizado com as últimas pesquisas e práticas é essencial para maximizar a eficácia na engenharia de prompts."
+      ],
+      "notaFinal": "Este guia é baseado nas informações do Prompt Engineering Guide (promptingguide.ai) e reflete as práticas e técnicas mais atuais no campo da engenharia de prompts."
+    }
+  ]
+}
+
