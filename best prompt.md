@@ -1,0 +1,1 @@
+https://fvivas.com/instrucoes-personalizadas-do-chatgpt/
