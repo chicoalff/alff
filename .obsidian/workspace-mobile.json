@@ -11,28 +11,17 @@
             "id": "1e406d7e4bb1258f",
             "type": "leaf",
             "state": {
-              "type": "json",
+              "type": "markdown",
               "state": {
-                "file": "knowledgebase/knowledge/prompting.json"
+                "file": "workflows/article/Ajustes py.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "prompting"
-            }
-          },
-          {
-            "id": "8605a2604002c700",
-            "type": "leaf",
-            "state": {
-              "type": "json",
-              "state": {
-                "file": "knowledgebase/flows/raw thinking/role-agente-normal.json"
-              },
-              "icon": "lucide-file",
-              "title": "role-agente-normal"
+              "title": "Ajustes py"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,43 +170,43 @@
       "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "8605a2604002c700",
+  "active": "1e406d7e4bb1258f",
   "lastOpenFiles": [
-    "knowledgebase/flows/raw thinking/artigo-full.md",
-    "knowledgebase/flows/raw thinking/role-agente-normal.json",
+    "knowledgebase/knowledge/prompting.json",
     "knowledgebase/flows/cot/Full plus.md",
+    "knowledgebase/flows/raw thinking/role-agente-normal.json",
+    "workflows/article/cot/config-sources.md",
+    "workflows/article/cot/flow-artigio.zip",
+    "workflows/article/cot/Full plus 1.md",
+    "workflows/article/cot/Full plus.md",
+    "workflows/article/cot/Full.md",
+    "workflows/article/cot/8.md",
+    "workflows/article/cot/7.md",
+    "workflows/article/cot/6.md",
+    "workflows/article/cot/Wqn5.md",
+    "workflows/article/cot/4.md",
+    "workflows/article/cot/3.md",
+    "workflows/article/cot/2.md",
+    "workflows/article/cot/1.md",
+    "workflows/article/article.py",
+    "workflows/article/cot",
+    "workflows/article/Ajustes py.md",
+    "workflows/raw thinking/artigo-full.md",
+    "workflows/raw thinking/fullteste.md",
+    "workflows/raw thinking/top_keywords.json",
+    "workflows/raw thinking/guia-artigo-padrao (1).md",
+    "workflows/raw thinking/role-agente-normal.json",
+    "workflows/raw thinking/role-agente-productnauta.yaml",
+    "workflows/article",
+    "workflows/raw thinking",
+    "workflows",
+    "knowledgebase/flows/raw thinking/artigo-full.md",
     "knowledgebase/flows/cot/Full plus 1.md",
     "knowledgebase/flows/cot/Wqn5.md",
     "knowledgebase/flows/cot/1.md",
     "knowledgebase/flows/assistente_conteudo_tecnico/fluxo_producao_artigo.md",
     "knowledgebase/flows/cot/2.md",
-    "knowledgebase/flows/cot/flow-artigio.zip",
     "knowledgebase/flows/Ajustes py.md",
-    "knowledgebase/flows/artigo-ar.md",
-    "knowledgebase/flows/artigo-ar.json",
-    "Untitled",
-    "knowledgebase/knowledge/prompting.json",
-    "knowledgebase/flows",
-    "knowledgebase/knowledgebase.md",
-    "Untitled 1.md",
-    "knowledgebase/knowledge/config.json",
-    "knowledgebase/config-a1.txt",
-    "knowledgebase/knowledge/content-writing.json",
-    "knowledgebase/templates/config-templates.json",
-    "Untitled.md",
-    "best prompt.md",
-    "knowledgebase/config-a.md",
-    "knowledgebase/config-a1.md",
-    "knowledgebase/config-a 1.md",
-    "prompts/Untitled 1.md",
-    "knowledgebase/about-chicoalff.md",
-    "config-a.md",
-    "config ia.md",
-    "prompts/tmpl-integracao-conhecimento-v1.txt.md",
-    "knowledgebase/knowledge -sources.md",
-    "knowledgebase/templates/templates-paterns.md",
-    "prompts/prompt-base.md",
-    "prompts/ghggg.md",
-    "prompts/base de conhecimento prompts.md"
+    "knowledgebase/flows/artigo-ar.md"
   ]
 }

@@ -1,0 +1,52 @@
+{
+  "H1": {
+    "min_palavras": 5,
+    "max_palavras": 9,
+    "min_caracteres": 45,
+    "max_caracteres": 65,
+    "subtitulo_min_palavras": 8,
+    "subtitulo_max_palavras": 12
+  },
+  "H2": {
+    "min_por_artigo": 4,
+    "max_por_artigo": 7,
+    "titulo_min_palavras": 3,
+    "titulo_max_palavras": 5,
+    "intro_frases_min": 2,
+    "intro_frases_max": 3
+  },
+  "H3": {
+    "min_por_H2": 2,
+    "max_por_H2": 4,
+    "titulo_min_palavras": 2,
+    "titulo_max_palavras": 4,
+    "intro_frases_min": 1,
+    "intro_frases_max": 2
+  },
+  "Paragrafos": {
+    "min_por_H2": 3,
+    "max_por_H2": 6,
+    "min_palavras": 40,
+    "max_palavras": 70,
+    "min_frases": 2,
+    "max_frases": 4
+  },
+  "Imagens": {
+    "min_por_artigo": 2,
+    "max_por_artigo": 4,
+    "legenda_min_palavras": 5,
+    "legenda_max_palavras": 10,
+    "alt_text_min_palavras": 3,
+    "alt_text_max_palavras": 8
+  },
+  "Links": {
+    "internos_min": 3,
+    "internos_max": 5,
+    "externos_min": 4,
+    "externos_max": 8
+  },
+  "Artigo_Geral": {
+    "min_palavras": 1200,
+    "max_palavras": 1800
+  }
+}
