@@ -59,7 +59,8 @@
               "title": "Untitled"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -191,11 +192,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "79e9c3e6ab3c2de9",
+  "active": "a38951f55d3f4781",
   "lastOpenFiles": [
+    "knowledgebase/config-a1.md",
     "knowledgebase/config-a.md",
     "knowledgebase/config-a 1.md",
-    "knowledgebase/config-a1.md",
     "Untitled.md",
     "prompts/Untitled 1.md",
     "knowledgebase/about-chicoalff.md",
