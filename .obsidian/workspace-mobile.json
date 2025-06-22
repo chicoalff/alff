@@ -23,14 +23,12 @@
             "id": "8605a2604002c700",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "json",
               "state": {
-                "file": "knowledgebase/flows/artigo-ar.md",
-                "mode": "source",
-                "source": false
+                "file": "knowledgebase/flows/raw thinking/role-agente-normal.json"
               },
               "icon": "lucide-file",
-              "title": "artigo-ar"
+              "title": "role-agente-normal"
             }
           }
         ],
@@ -185,9 +183,20 @@
   },
   "active": "8605a2604002c700",
   "lastOpenFiles": [
-    "knowledgebase/flows/artigo-ar.json",
-    "knowledgebase/knowledge/prompting.json",
+    "knowledgebase/flows/raw thinking/artigo-full.md",
+    "knowledgebase/flows/raw thinking/role-agente-normal.json",
+    "knowledgebase/flows/cot/Full plus.md",
+    "knowledgebase/flows/cot/Full plus 1.md",
+    "knowledgebase/flows/cot/Wqn5.md",
+    "knowledgebase/flows/cot/1.md",
+    "knowledgebase/flows/assistente_conteudo_tecnico/fluxo_producao_artigo.md",
+    "knowledgebase/flows/cot/2.md",
+    "knowledgebase/flows/cot/flow-artigio.zip",
+    "knowledgebase/flows/Ajustes py.md",
     "knowledgebase/flows/artigo-ar.md",
+    "knowledgebase/flows/artigo-ar.json",
+    "Untitled",
+    "knowledgebase/knowledge/prompting.json",
     "knowledgebase/flows",
     "knowledgebase/knowledgebase.md",
     "Untitled 1.md",
@@ -195,10 +204,6 @@
     "knowledgebase/config-a1.txt",
     "knowledgebase/knowledge/content-writing.json",
     "knowledgebase/templates/config-templates.json",
-    "knowledgebase/papers/General Tips for Designing Prompts _ Prompt Engineering Guide.pdf",
-    "knowledgebase/papers/Prompting Techniques _ Prompt Engineering Guide.pdf",
-    "knowledgebase/papers/Prompt Chaining _ Prompt Engineering Guide.pdf",
-    "knowledgebase/papers/Automatic Prompt Engineer (APE) _ Prompt Engineering Guide.pdf",
     "Untitled.md",
     "best prompt.md",
     "knowledgebase/config-a.md",
