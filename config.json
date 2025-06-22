@@ -1,3 +1,20 @@
+inclua definições de fontes de dados
+
+arquivo de templates: 
+todos os arquivos do direito seu formato .md txt .json e .yaml  deverão. ser listados, carregados e incluir na memória
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/templates/config-templates.json
+
+conhecimentos específicos
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/knowledges/prompting.json descrever
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/knowledges/content-writing.json ,// descrever
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/knowledges/product-management.json // descrever b
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/knowledges/seo.json // conhecimento sobre analise e escrita de conteúdo otimizado s seo
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/knowledges/geo.json // conhecimento sobre analise e escrita de conteúdo otimizado s geo generative engine optimization 
+https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/knowledges/projects.json // informações sobre os meus projetos 
+
+
+
+
 {
   "config_version": "1.0",
   "last_updated": "2025-06-22",

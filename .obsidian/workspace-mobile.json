@@ -11,10 +11,12 @@
             "id": "1da9f25f15100b56",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "json",
+              "state": {
+                "file": "config.json"
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "config"
             }
           }
         ]
@@ -162,11 +164,18 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
-      "publish:Publish changes...": false
+      "publish:Publish changes...": false,
+      "audio-recorder:Start/stop recording": false
     }
   },
-  "active": "63400414dc49f95e",
+  "active": "1da9f25f15100b56",
   "lastOpenFiles": [
+    "knowledgebase/papers/General Tips for Designing Prompts _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers/Prompting Techniques _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers/Prompt Chaining _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers/Automatic Prompt Engineer (APE) _ Prompt Engineering Guide.pdf",
+    "knowledgebase/papers",
+    "knowledgebase/kairós",
     "Untitled.md",
     "best prompt.md",
     "knowledgebase/config-a.md",
@@ -185,7 +194,6 @@
     "knowledgebase/knowledgebase.md",
     "knowledgebase/knowledge -sources.md",
     "knowledgebase/templates/templates-paterns.md",
-    "knowledgebase",
     "prompts/prompt-base.md",
     "prompts/ghggg.md",
     "prompts/base de conhecimento prompts.md"
