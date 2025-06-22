@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "knowledgebase/config-a 1.md",
+                "file": "knowledgebase/config-a1.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "config-a 1"
+              "title": "config-a1"
             }
           },
           {
@@ -195,6 +195,7 @@
   "lastOpenFiles": [
     "knowledgebase/config-a.md",
     "knowledgebase/config-a 1.md",
+    "knowledgebase/config-a1.md",
     "Untitled.md",
     "prompts/Untitled 1.md",
     "knowledgebase/about-chicoalff.md",
