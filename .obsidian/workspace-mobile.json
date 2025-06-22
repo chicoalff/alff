@@ -37,12 +37,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config ia.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "config ia"
+              "title": "Untitled"
             }
           },
           {
@@ -194,8 +194,8 @@
   },
   "active": "f8dbb0b01f2996fa",
   "lastOpenFiles": [
-    "Untitled.md",
     "config ia.md",
+    "Untitled.md",
     "best prompt.md",
     "prompts/tmpl-integracao-conhecimento-v1.txt.md",
     "knowledgebase/knowledgebase.md",
