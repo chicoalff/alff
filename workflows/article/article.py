@@ -1,9 +1,9 @@
 import os
 import re
-import time
 import requests
 import google.generativeai as genai
 
+# --- Configuração de variáveis de ambiente e API Gemini ---
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 if not GOOGLE_API_KEY:
     print("ERRO: variável de ambiente GOOGLE_API_KEY não configurada.")
@@ -12,23 +12,16 @@ if not GOOGLE_API_KEY:
 genai.configure(api_key=GOOGLE_API_KEY)
 model = genai.GenerativeModel('gemini-2.5-flash-preview-04-17')
 
-# URLs dos prompts no Github
-PROMPT_COLETA = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/1.md"
-PROMPT_SEMANTICA = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/2.md"
-PROMPT_TITULO = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/3.md"
-PROMPT_TOC = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/4.md"
-PROMPT_BLOCOS = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/6.md"
-PROMPT_REVISAO = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/7.md"
-PROMPT_CHECKLIST = "https://raw.githubusercontent.com/chicoalff/alff/master/knowledgebase/flows/cot/8.md"
+# --- URLs dos prompts diretamente do repositório GitHub (raw) ---
+PROMPT_COLETA    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F1.md"
+PROMPT_SEMANTICA = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F2.md"
+PROMPT_TITULO    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F3.md"
+PROMPT_TOC       = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F4.md"
+PROMPT_BLOCOS    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F6.md"
+PROMPT_REVISAO   = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F7.md"
+PROMPT_CHECKLIST = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F8.md"
 
-# Utilitário para baixar prompt
-def carregar_prompt(url: str) -> str:
-    resp = requests.get(url)
-    if resp.status_code == 200:
-        return resp.text.strip()
-    print(f"ERRO ao baixar prompt: {url}")
-    exit()
-
+# --- Parâmetros do artigo ---
 ARTIGO_PARAMETROS = {
     "H1": {"min_palavras":5,"max_palavras":9,"min_caracteres":45,"max_caracteres":65,"subtitulo_min_palavras":8,"subtitulo_max_palavras":12},
     "H2": {"min_por_artigo":4,"max_por_artigo":7,"titulo_min_palavras":3,"titulo_max_palavras":5,"intro_frases_min":2,"intro_frases_max":3},
@@ -39,14 +32,13 @@ ARTIGO_PARAMETROS = {
     "Artigo_Geral": {"min_palavras":1200,"max_palavras":1800}
 }
 
-def obter_input_usuario(rotulo: str) -> str:
-    return input(f"{rotulo}: ").strip()
-
-def obter_aprovacao_usuario(pergunta: str) -> bool:
-    while True:
-        r = input(f"{pergunta} (s/n): ").strip().lower()
-        if r in ('s','sim'): return True
-        if r in ('n','nao','não'): return False
+# --- Utilitários ---
+def carregar_prompt(url: str) -> str:
+    resp = requests.get(url)
+    if resp.status_code == 200:
+        return resp.text.strip()
+    print(f"ERRO ao baixar prompt: {url}")
+    exit()
 
 def gerar_conteudo_gemini(prompt: str, temperatura: float=0.7, max_tokens: int=2048) -> str:
     try:
@@ -62,16 +54,29 @@ def gerar_conteudo_gemini(prompt: str, temperatura: float=0.7, max_tokens: int=2
         print(f"Erro Gemini: {e}")
         return ""
 
+def obter_input_usuario(rotulo: str) -> str:
+    return input(f"{rotulo}: ").strip()
+
+def obter_aprovacao_usuario(pergunta: str) -> bool:
+    while True:
+        r = input(f"{pergunta} (s/n): ").strip().lower()
+        if r in ('s','sim'): return True
+        if r in ('n','nao','não'): return False
+
+# --- Fases do fluxo ---
 def coleta_dados_usuario() -> dict:
     prompt = carregar_prompt(PROMPT_COLETA)
     tema = obter_input_usuario("Tema principal do artigo")
     diretrizes = obter_input_usuario("Diretrizes (opcional)")
-    return {"tema": tema, "diretrizes": diretrizes, "prompt_coleta": prompt}
+    print(f"\nPrompt de coleta utilizado:\n{prompt}\n")
+    return {"tema": tema, "diretrizes": diretrizes}
 
 def busca_e_extracao_palavras_chave(tema: str, diretrizes: str) -> dict:
     prompt = carregar_prompt(PROMPT_SEMANTICA).format(tema=tema, diretrizes=diretrizes)
+    print(f"\nPrompt semântica utilizado:\n{prompt}\n")
     out = gerar_conteudo_gemini(prompt, temperatura=0.6, max_tokens=2500)
     top = re.findall(r'\d+\.\s*\*\*(.+?)\*\*', out)[:5]
+    print(f"\nResposta da busca e extração:\n{out}\n")
     return {"raw_output": out, "top_palavras_chave": top}
 
 def sugerir_e_aprovar_titulo(tema: str, diretrizes: str, dados_pesquisa: dict) -> tuple:
@@ -83,6 +88,7 @@ def sugerir_e_aprovar_titulo(tema: str, diretrizes: str, dados_pesquisa: dict) -
             raw_output=dados_pesquisa['raw_output'],
             **ARTIGO_PARAMETROS['H1']
         )
+        print(f"\nPrompt título utilizado:\n{prompt}\n")
         out = gerar_conteudo_gemini(prompt, temperatura=0.8)
         t = re.search(r'Título:\s*(.+)', out)
         s = re.search(r'Subtítulo:\s*(.+)', out)
@@ -90,7 +96,7 @@ def sugerir_e_aprovar_titulo(tema: str, diretrizes: str, dados_pesquisa: dict) -
         titulo = t.group(1).strip() if t else ""
         subtitulo = "" if not s or "Nenhum" in s.group(1) else s.group(1).strip()
         outline = o.group(1).strip() if o else ""
-        print(out)
+        print(f"\nResposta do título:\n{out}\n")
         if obter_aprovacao_usuario("Aprova título e outline inicial?"):
             return titulo, subtitulo, outline
 
@@ -104,8 +110,9 @@ def sugerir_e_aprovar_toc(titulo: str, subtitulo: str, outline: str, dados_pesqu
         **ARTIGO_PARAMETROS['H2'],
         **ARTIGO_PARAMETROS['H3']
     )
+    print(f"\nPrompt TOC utilizado:\n{prompt}\n")
     out = gerar_conteudo_gemini(prompt, temperatura=0.8, max_tokens=3000)
-    print(out)
+    print(f"\nResposta da TOC:\n{out}\n")
     secoes = []
     current = None
     for line in out.splitlines():
@@ -125,7 +132,7 @@ def sugerir_e_aprovar_toc(titulo: str, subtitulo: str, outline: str, dados_pesqu
 
 def construir_artigo_em_blocos(titulo: str, subtitulo: str, toc: list, dados_pesquisa: dict) -> str:
     tpl_h2 = carregar_prompt(PROMPT_BLOCOS)
-    tpl_h3 = carregar_prompt(PROMPT_BLOCOS)  # pode ser separado se quiser prompt diferente
+    tpl_h3 = carregar_prompt(PROMPT_BLOCOS)  # use outro prompt caso queira H3 separado
     tpl_final = carregar_prompt(PROMPT_REVISAO)
     markdown = [f"# {titulo}", subtitulo, ""]
     for sec in toc:
@@ -137,8 +144,9 @@ def construir_artigo_em_blocos(titulo: str, subtitulo: str, toc: list, dados_pes
                 h2_title=sec['title'], h2_intro=sec['intro'].strip(),
                 **ARTIGO_PARAMETROS['Paragrafos']
             )
+            print(f"\nPrompt bloco H2 utilizado:\n{prompt}\n")
             out = gerar_conteudo_gemini(prompt, temperatura=0.9, max_tokens=1500)
-            print(out)
+            print(f"\nResposta bloco H2:\n{out}\n")
             if obter_aprovacao_usuario(f"Aprova bloco H2 '{sec['title']}'?"):
                 markdown.append(out)
             for sub in sec["subsections"]:
@@ -149,8 +157,9 @@ def construir_artigo_em_blocos(titulo: str, subtitulo: str, toc: list, dados_pes
                     h3_title=sub['title'], h3_intro=sub['intro'].strip(),
                     **ARTIGO_PARAMETROS['Paragrafos']
                 )
+                print(f"\nPrompt bloco H3 utilizado:\n{prompt}\n")
                 out = gerar_conteudo_gemini(prompt, temperatura=0.9, max_tokens=1000)
-                print(out)
+                print(f"\nResposta bloco H3:\n{out}\n")
                 if obter_aprovacao_usuario(f"Aprova bloco H3 '{sub['title']}'?"):
                     markdown.append(out)
     prompt = tpl_final.format(
@@ -160,8 +169,9 @@ def construir_artigo_em_blocos(titulo: str, subtitulo: str, toc: list, dados_pes
         **ARTIGO_PARAMETROS['Imagens'],
         **ARTIGO_PARAMETROS['Links']
     )
+    print(f"\nPrompt revisão final utilizado:\n{prompt}\n")
     out = gerar_conteudo_gemini(prompt, temperatura=0.7)
-    print(out)
+    print(f"\nResposta revisão final:\n{out}\n")
     markdown.append(out)
     return "\n".join([m for m in markdown if m])
 
