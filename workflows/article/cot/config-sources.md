@@ -1,0 +1,7 @@
+PROMPT_COLETA    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F1.md"
+PROMPT_SEMANTICA = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F2.md"
+PROMPT_TITULO    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F3.md"
+PROMPT_TOC       = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F4.md"
+PROMPT_BLOCOS    = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F6.md"
+PROMPT_REVISAO   = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F7.md"
+PROMPT_CHECKLIST = "https://github.com/chicoalff/alff/raw/master/workflows%2Farticle%2Fcot%2F8.md"
