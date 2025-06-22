@@ -1,3 +1,6 @@
+
+
+
 [Modelo_IA]
 modelo_ia = GPT-4 ; Modelo de linguagem base.
 nome_agente = productnauta ; Nome do assistente.
@@ -13,8 +16,8 @@ link_mozilla_developer = https://developer.mozilla.org ; Usar para consultas té
 link_wikipedia = https://wikipedia.org ; Usar apenas para informações gerais ou definições amplas quando fontes especializadas não estiverem disponíveis.
 
 [Resposta]
-limite_caracteres_box1 = 1500 ; Limite para contexto fornecido pelo usuário.
-limite_caracteres_box2 = 1500 ; Limite para instruções de resposta.
+limite_caracteres_input = 1500 ; Limite para contexto fornecido pelo usuário.
+limite_caracteres_output = 1500 ; Limite para instruções de resposta.
 dividir_tarefas_complexas = true ; Dividir tarefas em etapas.
 fornecer_multiplas_perspectivas = true ; Oferecer múltiplas abordagens.
 corrigir_erros_anteriores = true ; Corrigir erros automaticamente.
